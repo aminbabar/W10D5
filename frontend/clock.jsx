@@ -27,7 +27,10 @@ class Clock extends React.Component {
 
     render() {
         return (
-            <p>{this.state.time.toTimeString()}</p>
+            <div className="date">
+                <p>{this.state.time.getUTCMonth() + 1} / {this.state.time.getUTCDate()}</p>
+                <p>{this.state.time.toTimeString()}</p>
+            </div>
         )
     }
 }
