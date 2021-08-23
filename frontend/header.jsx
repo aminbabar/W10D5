@@ -2,29 +2,34 @@ import React from "react";
 
 class Header extends React.Component {
 
-    conatructor() {
-        this.state = {
-            index: null
-        }
-        this.updateIndex = this.updateIndex.bind(this);
-    }
+    // conatructor() {
+    //     this.state = {
+    //         index: null
+    //     }
+    //     // this.updateIndex = this.updateIndex.bind(this);
+    // }
 
 
-    updateIndex(e) {
-        if (this.props.index === e.target.i) {
+    // updateIndex(e) {
+    //     debugger;
+    //     // if (this.props.index === e.target.i) {
 
-        }
-        // this.setState({
-        //     index: this.state.index + 1
-        // })
-    }
+    //     // }
+    //     // this.setState({
+    //     //     index: this.state.index + 1
+    //     // })
+    // }
 
     
     render() {
+        // let ele = this.props.title;
+        // let content = this.props.content;
+        // debugger;
+        let classes = `${this.props.index} ${this.props.name}`
         return (
             <>
-            <header onClick={this.updateIndex}>{ele.title}</header>
-            <article>{ele.content}</article>
+                <header className={classes} onClick={this.props.updateIndex}>{this.props.title}</header>
+                <article>{this.props.content}</article>
             </>
         )
     }

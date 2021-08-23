@@ -8,3 +8,7 @@
     background-color: rgb(167, 184, 148);
 }
 
+.selected {
+    color: red;
+}
+
