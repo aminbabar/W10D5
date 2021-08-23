@@ -8,7 +8,14 @@
     background-color: rgb(167, 184, 148);
 }
 
-.selected {
-    color: red;
+.headers article {
+    display: none;
 }
+
+
+.selected, .selected + article {
+    color: red;
+    display: flex;
+}
+
 
